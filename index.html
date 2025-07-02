@@ -6,30 +6,34 @@
     <meta name="author" content="Mpilo Shezi">
     <meta name="description" content="A online resume for a junior front-end developer">
     <link rel="stylesheet" href="style.css">
-    <title>Digital Resume</title>
+    <script src="script.js" defer></script>
+    <title>Mpilo Shezi | Digital Resume</title>
 </head>
 <body>
-    <main>
+    <header class="header">
+        <h1 class="logo" id="logo">Mpilo Shezi</h1>
+        <button class="hamburger" aria-label="Toggle navigation">
+            ☰
+        </button>
+        <nav class="nav" id="index" aria-label="Main navigation">   
+            <ul>
+                <li><a href="#index">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>    
+                <li><a href="#projects">Projects</a></li>
+                <li><button><a href="#contact-me">Contact me</a></button></li>
+            </ul>
+        </nav>   
+    </header>
+    <main class="main" id="main">
+        <h2 class="subheading">Junior Front-End Developer | Lifelong Learner</h2>
 
-        <header>
-            <h1>Mpilo Shezi</h1>
-            <h2>Junior Front-End Developer | Lifelong Learner</h2>
-            <nav id="index" aria-label="Main navigation">   
-                <ul>
-                    <li><a href="#index">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#experience">Experience</a></li>    
-                    <li><a href="#projects">Projects</a></li>
-                </ul>
-            </nav>   
-        </header>
-
-        <section id="about">
+        <section class="about" id="about_me">
             <h3>About Me</h3>
             <p>I’m Mpilo, a passionate learner focused on mastering     front-end development and software engineering fundamentals. I  enjoy building clean, functional interfaces and learning how     things work under the hood.</p>
         </section>
 
-        <section id="experience">
+        <section class="experience" id="experience">
             <h3>Experience</h3>
             <ul>
                 <li>General Assistant – Developed strong communication and  teamwork skills</li>
@@ -37,7 +41,7 @@
             </ul>
         </section>
 
-        <section id="projects">
+        <section class="projects" id="projects">
             <h3>Projects</h3>
             <ul>
                 <li>
@@ -51,7 +55,7 @@
             </ul>
         </section>
 
-        <section id="contact-me">
+        <section class="contact-me" id="contact_me">
             <h3>Contact Me</h3>
             <form action="#" method="post">
                 <label for="name">Name:</label><br>
@@ -70,11 +74,9 @@
                 <a href="https://www.linkedin.com/in/mpilo-shezi-3049722b7/" target="_blank">LinkedIn</a>
             </p>
         </section>
-
-        <footer id="footer">
-            <p>© 2025 Mpilo Shezi. All rights reserved.</p>
-        </footer>
-
     </main>
+    <footer class="footer" id="footer">
+            <p>© 2025 Mpilo Shezi. All rights reserved.</p>
+    </footer>
 </body>
 </html>
