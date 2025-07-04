@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Mobile Navigation
 const hamburger = document.getElementById('hamburger');
 const nav = document.getElementById('nav');
@@ -72,11 +71,3 @@ if (contactForm) {
         });
     });
 }
-=======
-const hamburger = document.querySelector('.hamburger');
-const nav = document.querySelector('.nav');
-
-hamburger.addEventListener('click', () => {
-    nav.classList.toggle('open');
-});
->>>>>>> 5cf322fb0bf00f6273eded7fdca396fecbb7a888
