@@ -4,79 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Mpilo Shezi">
-    <meta name="description" content="A online resume for a junior front-end developer">
+    <meta name="description" content="Mpilo Shezi is a junior front-end developer specializing in responsive design, semantic HTML, and modern CSS. Explore my portfolio and web projects.">
+    <meta property="og:title" content="Mpilo Shezi | Front-End Developer Portfolio">
+    <meta property="og:description" content="Explore Mpilo's responsive web projects and development skills.">
+    <meta property="og:image" content="Images/selfie.jpg"> <!-- Replace with actual image path -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t00la7y.github.io/digital-resume/"> <!-- Replace with your domain -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mpilo Shezi | Front-End Developer Portfolio">
+    <meta name="twitter:description" content="Explore Mpilo's responsive web projects and development skills.">
+    <meta name="twitter:image" content="Images/selfie.jpg">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/laptop.png" type="image/png">
     <script src="script.js" defer></script>
-    <title>Mpilo Shezi | Digital Resume</title>
+    <title>Mpilo Shezi | Junior Front-End Developer Portfolio</title>
 </head>
 <body>
     <header class="header">
-        <h1 class="logo" id="logo">Mpilo Shezi</h1>
-        <button class="hamburger" aria-label="Toggle navigation">
-            ☰
+        <h1 class="logo">t00la7y_code</h1>
+        <button class="hamburger" id="hamburger" aria-expanded="false" aria-label="Menu">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
         </button>
-        <nav class="nav" id="index" aria-label="Main navigation">   
-            <ul>
-                <li><a href="#index">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#experience">Experience</a></li>    
-                <li><a href="#projects">Projects</a></li>
-                <li><button><a href="#contact-me">Contact me</a></button></li>
+        <nav class="nav" id="nav">
+            <ul class="nav-list">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
             </ul>
-        </nav>   
+            <a href="contact.html" class="contact-btn">Contact</a>
+        </nav>
     </header>
-    <main class="main" id="main">
-        <h2 class="subheading">Junior Front-End Developer | Lifelong Learner</h2>
 
-        <section class="about" id="about_me">
-            <h3>About Me</h3>
-            <p>I’m Mpilo, a passionate learner focused on mastering     front-end development and software engineering fundamentals. I  enjoy building clean, functional interfaces and learning how     things work under the hood.</p>
+    <main class="main">
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1 class="hero-title">Junior Front-End Developer</h1>
+                <p class="hero-subtitle">Creating beautiful, functional web experiences</p>
+            </div>
         </section>
 
-        <section class="experience" id="experience">
-            <h3>Experience</h3>
-            <ul>
-                <li>General Assistant – Developed strong communication and  teamwork skills</li>
-                <li>Programming Practice – Built data structures in C++ ,   Python and JavaScript</li>
-            </ul>
+        <section class="about" id="about">
+            <div class="about-content">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-text">
+                    <p>I studied Computer Programming & Web Development at Newbridge Graduate Institution. Throughout my studies, I worked on a variety of projects that strengthened my skills in HTML, CSS, JavaScript, Python, and C++. These experiences helped me build a strong technical foundation and a passion for writing clean, efficient code. While I’ve learned a lot through coursework and personal projects, I’m eager to gain real-world experience, contribute to meaningful work, and continue growing as a developer through collaboration and hands-on challenges.</p>
+                </div>
+            </div>
+            <div class="about-image"></div>
         </section>
 
         <section class="projects" id="projects">
-            <h3>Projects</h3>
-            <ul>
-                <li>
-                    <strong><a href="https://github.com/t00la7y/Mpilo-Bank">Savings Account Simulator</a>:</strong>
-                    <ul>
-                        <li>Built with C++ using object-oriented principles</li>
-                        <li>Implements inheritance and basic financial logic</li>
-                        <li>Practiced file I/O and user input validation</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-
-        <section class="contact-me" id="contact_me">
-            <h3>Contact Me</h3>
-            <form action="#" method="post">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
-
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"     required><br><br>
-
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="5" required></textarea><br><br>
-
-                <button type="submit">Send</button>
-            </form>
-            <p>Connect with me: 
-                <a href="https://github.com/t00la7y" target="_blank" rel="noopener noreferrer">GitHub</a> | 
-                <a href="https://www.linkedin.com/in/mpilo-shezi-3049722b7/" target="_blank">LinkedIn</a>
-            </p>
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <h3>Mpilo Bank</h3>
+                    <p>C++ savings account simulator using OOP principles</p>
+                    <a href="https://github.com/t00la7y/Mpilo-Bank" class="project-link">View Project</a>
+                </article>
+            </div>
         </section>
     </main>
-    <footer class="footer" id="footer">
-            <p>© 2025 Mpilo Shezi. All rights reserved.</p>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://github.com/t00la7y" aria-label="GitHub">
+                    <svg class="social-icon"><use href="#github-icon"/></svg>
+                </a>
+                <a href="https://linkedin.com/in/mpilo-shezi" aria-label="LinkedIn">
+                    <svg class="social-icon"><use href="#linkedin-icon"/></svg>
+                </a>
+            </div>
+            <p class="copyright">© 2025 Mpilo Shezi. All rights reserved.</p>
+        </div>
     </footer>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+        <symbol id="github-icon" viewBox="0 0 24 24">
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </symbol>
+        <symbol id="linkedin-icon" viewBox="0 0 24 24">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+        </symbol>
+    </svg>
 </body>
 </html>

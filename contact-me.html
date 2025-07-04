@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mpilo Shezi">
+    <title>Contact Mpilo Shezi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/laptop.png" type="image/png">
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">t00la7y_code</h1>
+        <button class="hamburger" id="hamburger" aria-expanded="false" aria-label="Menu">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <nav class="nav" id="nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+            </ul>
+            <a href="contact.html" class="contact-btn active">Contact</a>
+        </nav>
+    </header>
+
+    <main class="main contact-main">
+        <section class="contact-section">
+            <div class="contact-container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="contact-intro">Have a project in mind or want to connect? Reach out through any of these methods:</p>
+                
+                <div class="contact-options">
+                    <div class="contact-method">
+                        <h3>Email Me Directly</h3>
+                        <a href="mailto:mpiloshezi002@gmail.com" class="email-btn">mpiloshezi002@gmail.com</a>
+                    </div>
+
+                    <div class="contact-divider">
+                        <span>OR</span>
+                    </div>
+
+                    <form class="contact-form" action="https://formsubmit.co/mpiloshezi002@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="New Portfolio Message">
+                        <input type="hidden" name="_captcha" value="false">
+                        
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://github.com/t00la7y" aria-label="GitHub">
+                    <svg class="social-icon"><use href="#github-icon"/></svg>
+                </a>
+                <a href="https://linkedin.com/in/mpilo-shezi" aria-label="LinkedIn">
+                    <svg class="social-icon"><use href="#linkedin-icon"/></svg>
+                </a>
+            </div>
+            <p class="copyright">© 2025 Mpilo Shezi. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
